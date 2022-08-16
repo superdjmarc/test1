@@ -1,6 +1,7 @@
 package main
 import (
 	"github.com/gorilla/mux"
+	"github.com/superdjmarc/test1.git/package1"
 	"log"
 	"net/http"
 	"time"
@@ -9,6 +10,9 @@ import (
 //https://blog.jetbrains.com/go/2020/02/26/working-with-go-modules-getting-started/
 
 func main() {
+
+	package1.PrintHello()
+
 	mtx := mux.NewRouter()
 	mtx.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		_, _ = w.Write([]byte("Hello World!"))
