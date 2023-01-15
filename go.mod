@@ -1,5 +1,3 @@
-module github.com/superdjmarc/test1.git
+module github.com/superdjmarc/test1
 
 go 1.18
-
-require github.com/gorilla/mux v1.7.2
